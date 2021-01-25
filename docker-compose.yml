@@ -1,0 +1,14 @@
+version: "3"
+
+services: 
+    mgb:
+        container_name: mgb_gfortran
+        build: 
+            context: .
+            dockerfile: Dockerfile 
+        volumes:
+            - .:/mgb/
+        tty: true
+        
+  
+
